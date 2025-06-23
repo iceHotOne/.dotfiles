@@ -6,8 +6,13 @@ line-number = "relative"
 mouse = false
 popup-border = "all"
 rulers = [100]
-text-width = 120
+text-width = 100
 true-color = true
+end-of-line-diagnostics = "disable"
+
+[editor.soft-wrap]
+# enable = true
+# wrap-at-text-width = true
 
 [editor.cursor-shape]
 normal = "block"
@@ -34,5 +39,8 @@ C-d = ["half_page_down", "goto_window_center"]
 X = ["extend_line_up", "extend_to_line_bounds"]
 
 [keys.normal.space.z]
-b = [":w", ":sh zig build"]
-t = [":w", ":sh zig test"]
+b = ":sh zig build"
+t = ":sh zig test"
+r = ":sh zig run"
+
+
